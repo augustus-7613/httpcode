@@ -39,8 +39,8 @@ void print_json_string(const char *s)
     {
         switch (*s)
         {
-            case '"':  printf("\\\""); break;
-            case '\\': printf("\\\\"); break;
+            case '"':  printf("\\\"");  break;
+            case '\\': printf("\\\\");  break;
             case '\n': printf("\\n");   break;
             case '\t': printf("\\t");   break;
             default:   putchar(*s);     break;
